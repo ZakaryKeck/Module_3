@@ -6,7 +6,7 @@ public class ObstacleGenerator : MonoBehaviour
 {
     public GameObject[] obstaclePrefabs;
     
-    private float obstacleSpawnLocation = 15.0f;
+    private float obstacleSpawnLocation = 30.0f;
 
     // Start is called before the first frame update
     void Start()

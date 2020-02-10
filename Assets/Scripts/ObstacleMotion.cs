@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class ObstacleMotion : MonoBehaviour
 {
-    private float speed = 5.0f;
+    public float speed = 5.0f;
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate((Vector3.back * speed * Time.deltaTime));
+        if(transform.position.z > 0)
+        {
+            transform.Translate((Vector3.back * speed * Time.deltaTime));
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 }
